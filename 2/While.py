@@ -84,4 +84,4 @@ while i < len(string1):
 print(count)
 """
 
-print("download test")
+print("push test")
