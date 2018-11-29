@@ -100,5 +100,5 @@ print(list19, list20)
 print(id(list19), id(list20))
 
 # 将元组转换成列表
-list21 = list((1,2,3,4))
+list21 = list((1, 2, 3, 4))
 print(list21)
