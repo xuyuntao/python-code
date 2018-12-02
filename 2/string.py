@@ -77,3 +77,33 @@ print(str3)
 print(str3.lstrip(), str4.lstrip(), str5.rstrip())
 print(str3.lstrip(), str4.lstrip("*"), str5.strip("*"))
 print(str6.strip("*"))
+
+
+# replace(oldstr,newstr,counts) 替换字符串中的指定子字符串，默认全部替换，count为指定替换的个数
+t1 = "xyt is a good good good guys"
+t2 = t1.replace("good", "nice", 2)
+print(t2)
+
+# 替换translatio（）配合maketrans（）使用
+t3 = str.maketrans("oo", "ce")
+t4 = t1.translate(t3)
+print(t1)
+print(t4)
+
+
+# startwith(str,start,end) 判断指定范围字符串是否以str开头，默认是整个字符串判断
+
+# endwith（str，start，end）判断指定范围字符串是否以str结尾，默认是整个字符串判断
+
+# encode(encodinng="utf-8",errors="strict")编码
+t5 = "good good study"
+t6 = t5.encode("utf-8")
+print(t6)
+# decode()解码
+t7 = t6.decode("utf-8")
+print(t7)
+
+
+t8 = "   xyt is   a  good man"
+t9 = list(t8)
+print(t9)
