@@ -29,3 +29,30 @@ def Print9x9():
             print("%d x %d = %d " % (j, i, j * i))
 
 Print9x9()
+
+
+def func():
+    print('good good study ,day day up')
+def outer(func):
+    def inner():
+        print('**************************')
+        func()
+    return inner()
+
+f = outer(func)
+
+
+# 作用域 局部作用域、全局作用域、内建作用域
+
+
+try:
+    #print(num)
+    #print(3 / 0)
+    print(3/1)
+except ZeroDivisionError as e:
+    print("除数为0")
+except NameError as e:
+    print("没有定义该变量")
+
+else:
+    print("代码没问题")
